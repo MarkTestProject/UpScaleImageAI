@@ -8,30 +8,6 @@ from utils import utils_image as util
 from models.network_rrdbnet import RRDBNet as net
 
 
-"""
-Spyder (Python 3.6-3.7)
-PyTorch 1.4.0-1.8.1
-Windows 10 or Linux
-Kai Zhang (cskaizhang@gmail.com)
-github: https://github.com/cszn/BSRGAN
-        https://github.com/cszn/KAIR
-If you have any question, please feel free to contact with me.
-Kai Zhang (e-mail: cskaizhang@gmail.com)
-by Kai Zhang ( March/2020 --> March/2021 --> )
-This work was previously submitted to CVPR2021.
-
-# --------------------------------------------
-@inproceedings{zhang2021designing,
-  title={Designing a Practical Degradation Model for Deep Blind Image Super-Resolution},
-  author={Zhang, Kai and Liang, Jingyun and Van Gool, Luc and Timofte, Radu},
-  booktitle={arxiv},
-  year={2021}
-}
-# --------------------------------------------
-
-"""
-
-
 def main():
 
     utils_logger.logger_info('blind_sr_log', log_path='blind_sr_log.log')
@@ -45,7 +21,7 @@ def main():
     testset_Ls = ['RealSRSet']  # ['RealSRSet','DPED']
 
     model_names = ['RRDB','ESRGAN','FSSR_DPED','FSSR_JPEG','RealSR_DPED','RealSR_JPEG']
-    model_names = ['BSRGAN']    # 'BSRGANx2' for scale factor 2
+    model_names = ['UPSCAGAN_Models']    # 'BSRGANx2' for scale factor 2
 
 
 
