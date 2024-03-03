@@ -4,20 +4,6 @@ import requests
 import re
 
 
-"""
-How to use:
-
-download BSRGAN models:
-    python main_download_pretrained_models.py --models "BSRGAN" --model_dir "model_zoo"
-
-------------------------------------------------------------------
-
-download 'BSRGAN.pth'
-    python main_download_pretrained_models.py --models "BSRGAN.pth" --model_dir "model_zoo"
-
-"""
-
-
 def download_pretrained_model(model_dir='model_zoo', model_name='dncnn3.pth'):
     if os.path.exists(os.path.join(model_dir, model_name)):
         print(f'already exists, skip downloading [{model_name}]')
