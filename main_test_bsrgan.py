@@ -21,7 +21,7 @@ def main():
     testset_Ls = ['RealSRSet']  # ['RealSRSet','DPED']
 
     model_names = ['RRDB','ESRGAN','FSSR_DPED','FSSR_JPEG','RealSR_DPED','RealSR_JPEG']
-    model_names = ['UPSCAGAN_Models']    # 'BSRGANx2' for scale factor 2
+    model_names = ['BSRGAN']    # 'BSRGANx2' for scale factor 2
 
 
 
